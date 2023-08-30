@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jest-dom', 'testing-library', 'import'],
   rules: {
     'import/order': [
       'error',
@@ -57,5 +57,11 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '**/?(*.)+(spec|test).+(ts|tsx|js)'],
+      extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react'],
+    },
+  ],
   root: true,
 };
