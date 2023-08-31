@@ -1,0 +1,46 @@
+name: 🚀 Proposal of new features
+description: Suggest an idea for this project
+title: '[Feat]: '
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your contribution to the project.
+        Please let us know what features you would like to propose.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Briefly describe the function you are proposing. ex) Function name, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: feature-reason
+    attributes:
+      label: Reason for proposal
+      description: Please describe the reason for the proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: feature-specification
+    attributes:
+      label: Specification
+      description: Please provide any specific descriptions or suggestions for proposed functions.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: If you have additional information or specific UI suggestions for additional features, please send them here. Images, etc. are also welcome!
+  - type: checkboxes
+    id: feature-acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Please check the acceptance criteria for the feature you are proposing.
+      options:
+        - label: I have checked the acceptance criteria.
+          required: true
+        - label: I read the CONTRIBUTE.md
+          required: true
+        - label: Check that there isn't already an issue that request the same feature to avoid creating a duplicate.
+          required: true
