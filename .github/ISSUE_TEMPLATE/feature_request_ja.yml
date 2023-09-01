@@ -1,0 +1,47 @@
+name: 🚀 新機能の提案
+description: プロジェクトに対して新機能の提案を行うためのテンプレートです。
+title: '[Feat]: '
+labels: ['feature']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        プロジェクトに対しての提案をご検討頂きありがとうございます！
+        以下のテンプレートに従って、提案内容をご記入ください。
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 機能の概要
+      description: 提案したい機能について簡潔に説明してください。
+    validations:
+      required: true
+  - type: textarea
+    id: feature-reason
+    attributes:
+      label: 提案理由
+      description: なぜその機能が欲しいのかについて簡潔に説明してください。
+    validations:
+      required: true
+  - type: textarea
+    id: feature-specification
+    attributes:
+      label: 機能の仕様
+      description: 提案した機能について、具体的な説明や提案があればご記入ください。
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 追加情報
+      description: 追加情報や具体的なUIの提案などありましたら、こちらまでお寄せください。画像なども大歓迎です！
+  - type: checkboxes
+    id: feature-acceptance-criteria
+    attributes:
+      label: 起票する前に以下を確認してください。
+      description: |
+        以下の項目について確認してください。確認が取れていない場合は、起票ができません。
+      options:
+        - label: 機能の概要を記載した
+          required: true
+        - label: CONTRIBUTING.md を読んだ
+          required: true
+        - label: 重複を避けるために、同じ機能を要求するissueがすでに存在しないことを確認した
+          required: true
