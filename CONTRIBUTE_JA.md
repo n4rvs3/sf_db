@@ -43,4 +43,3 @@ Voltaの公式サイト: https://volta.sh/
 - chore: 🤖
 - perf: ⚡️
 - ci: 🎡
-- Github Actions: 💻
